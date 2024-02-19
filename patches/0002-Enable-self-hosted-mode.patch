@@ -1,0 +1,27 @@
+From e194fb731175df788ab303aad475da3dd54f00bd Mon Sep 17 00:00:00 2001
+From: Kyle Harding <kyle@balena.io>
+Date: Mon, 19 Feb 2024 09:47:42 -0500
+Subject: [PATCH 2/2] Enable self-hosted mode
+
+Signed-off-by: Kyle Harding <kyle@balena.io>
+---
+ SD_ROOT/wz_mini/wz_mini.conf | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/SD_ROOT/wz_mini/wz_mini.conf b/SD_ROOT/wz_mini/wz_mini.conf
+index 5571d83..3c1e34d 100644
+--- a/SD_ROOT/wz_mini/wz_mini.conf
++++ b/SD_ROOT/wz_mini/wz_mini.conf
+@@ -104,3 +104,3 @@ ENABLE_EXT4="false"
+ ENABLE_CIFS="false"
+-DISABLE_FW_UPGRADE="false"
++DISABLE_FW_UPGRADE="true"
+ AUDIO_PROMPT_VOLUME="50"
+@@ -112,3 +112,3 @@ ENABLE_LOCAL_DNS="false"
+ ENABLE_CRONTAB="false"
+-ENABLE_SELFHOSTED_MODE="false"
++ENABLE_SELFHOSTED_MODE="true"
+ 
+-- 
+2.40.1
+

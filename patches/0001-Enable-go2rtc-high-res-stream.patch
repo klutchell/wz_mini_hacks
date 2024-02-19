@@ -1,0 +1,26 @@
+From eda2daee631dff7d0a70e36530b909c495390feb Mon Sep 17 00:00:00 2001
+From: Kyle Harding <kyle@balena.io>
+Date: Mon, 19 Feb 2024 09:46:58 -0500
+Subject: [PATCH 1/2] Enable go2rtc high-res stream
+
+Signed-off-by: Kyle Harding <kyle@balena.io>
+---
+ SD_ROOT/wz_mini/wz_mini.conf | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/SD_ROOT/wz_mini/wz_mini.conf b/SD_ROOT/wz_mini/wz_mini.conf
+index 53a0d54..5571d83 100644
+--- a/SD_ROOT/wz_mini/wz_mini.conf
++++ b/SD_ROOT/wz_mini/wz_mini.conf
+@@ -81,5 +81,5 @@ VIDEO_1_FPS=""
+ 
+-GO2RTC_SERVER_ENABLED="false"
+-GO2RTC_HI_RES_ENABLED="false"
+-GO2RTC_HI_RES_ENABLE_AUDIO="false"
++GO2RTC_SERVER_ENABLED="true"
++GO2RTC_HI_RES_ENABLED="true"
++GO2RTC_HI_RES_ENABLE_AUDIO="true"
+ GO2RTC_LOW_RES_ENABLED="false"
+-- 
+2.40.1
+
